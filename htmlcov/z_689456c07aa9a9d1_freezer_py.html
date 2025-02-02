@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="z_689456c07aa9a9d1_module_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.6.4">coverage.py v7.6.4</a>,
-            created at 2025-02-02 07:28 +0000
+            created at 2025-02-02 07:58 +0000
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -667,7 +667,7 @@
     <p class="run"><span class="n"><a id="t585" href="#t585">585</a></span><span class="t">        <span class="nam">invalid</span> <span class="op">=</span> <span class="nam">sorted</span><span class="op">(</span><span class="nam">zip_include_packages</span> <span class="op">&amp;</span> <span class="nam">zip_exclude_packages</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t586" href="#t586">586</a></span><span class="t">        <span class="key">if</span> <span class="nam">invalid</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t587" href="#t587">587</a></span><span class="t">            <span class="nam">msg</span> <span class="op">=</span> <span class="op">(</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t588" href="#t588">588</a></span><span class="t">                <span class="fst">f"</span><span class="fst">package</span><span class="op">{</span><span class="str">'s'</span> <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">invalid</span><span class="op">)</span><span class="op">></span><span class="num">1</span> <span class="key">else</span> <span class="str">''</span><span class="op">}</span><span class="fst"> </span><span class="fst">"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t588" href="#t588">588</a></span><span class="t">                <span class="fst">f"</span><span class="fst">package</span><span class="op">{</span><span class="str">'s'</span> <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">invalid</span><span class="op">)</span> <span class="op">></span> <span class="num">1</span> <span class="key">else</span> <span class="str">''</span><span class="op">}</span><span class="fst"> </span><span class="fst">"</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t589" href="#t589">589</a></span><span class="t">                <span class="fst">f"</span><span class="op">{</span><span class="str">', '</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">invalid</span><span class="op">)</span><span class="op">!</span><span class="nam">r</span><span class="op">}</span><span class="fst"> </span><span class="fst">"</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t590" href="#t590">590</a></span><span class="t">                <span class="str">"cannot be both included and excluded from zip file"</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t591" href="#t591">591</a></span><span class="t">            <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -1122,7 +1122,7 @@
     <p class="run"><span class="n"><a id="t1040" href="#t1040">1040</a></span><span class="t">            <span class="nam">py_version</span> <span class="op">=</span> <span class="fst">f"</span><span class="op">{</span><span class="nam">PYTHON_VERSION</span><span class="op">}</span><span class="op">{</span><span class="nam">ABI_THREAD</span><span class="op">}</span><span class="fst">"</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t1041" href="#t1041">1041</a></span><span class="t">            <span class="nam">names</span> <span class="op">=</span> <span class="op">[</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t1042" href="#t1042">1042</a></span><span class="t">                <span class="fst">f"</span><span class="fst">python</span><span class="op">{</span><span class="nam">sys</span><span class="op">.</span><span class="nam">version_info</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">}</span><span class="fst">.dll</span><span class="fst">"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t1043" href="#t1043">1043</a></span><span class="t">                <span class="fst">f"</span><span class="fst">python</span><span class="op">{</span><span class="nam">py_version</span><span class="op">.</span><span class="nam">replace</span><span class="op">(</span><span class="str">'.'</span><span class="op">,</span><span class="str">''</span><span class="op">)</span><span class="op">}</span><span class="fst">.dll</span><span class="fst">"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t1043" href="#t1043">1043</a></span><span class="t">                <span class="fst">f"</span><span class="fst">python</span><span class="op">{</span><span class="nam">py_version</span><span class="op">.</span><span class="nam">replace</span><span class="op">(</span><span class="str">'.'</span><span class="op">,</span> <span class="str">''</span><span class="op">)</span><span class="op">}</span><span class="fst">.dll</span><span class="fst">"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t1044" href="#t1044">1044</a></span><span class="t">            <span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t1045" href="#t1045">1045</a></span><span class="t">        <span class="nam">python_shared_libs</span><span class="op">:</span> <span class="nam">list</span><span class="op">[</span><span class="nam">Path</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t1046" href="#t1046">1046</a></span><span class="t">        <span class="key">for</span> <span class="nam">name</span> <span class="key">in</span> <span class="nam">names</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -1488,7 +1488,7 @@
             <a class="nav" href="z_689456c07aa9a9d1_module_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.6.4">coverage.py v7.6.4</a>,
-            created at 2025-02-02 07:28 +0000
+            created at 2025-02-02 07:58 +0000
         </p>
     </div>
 </footer>
