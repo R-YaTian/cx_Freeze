@@ -266,7 +266,7 @@ static int InitializePython(int argc, wchar_t** argv)
 #ifdef MS_WINDOWS
     LoadPython3dll();
     // On Windows platform, the DLL search path is changed here.
-    if (AddDllDirectory(lib_dir) == 0)
+    if (SetDllDirectory(lib_dir) == 0)
         return FatalError("Unable to change DLL search path!");
 
     wexecutable = executable;
