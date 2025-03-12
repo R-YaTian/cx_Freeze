@@ -87,6 +87,11 @@ class BuildBases(setuptools.command.build_ext.build_ext):
                 # RT_MANIFEST, so remove it to link successfully.
                 with contextlib.suppress(ValueError):
                     self.compiler.ldflags_exe.remove("/MANIFEST:EMBED,ID=1")
+                if "Win32GUI" in ext.name:
+                    extra_args.append('-subsystem:windows,5.01')
+                else:
+                    extra_args.append('-subsystem:console,5.01')
+                self.compiler.compile_options.extend(["/O2", "/D_USING_V110_SDK71_", "/D_WIN32_WINNT=0x0503"])
             elif compiler_type == "mingw32":
                 if "Win32GUI" in ext.name:
                     extra_args.append("-mwindows")
