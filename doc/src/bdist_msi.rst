@@ -67,7 +67,7 @@ command:
        Refer to `Windows Installer Scrollable Text
        <https://learn.microsoft.com/en-us/windows/win32/msi/scrollabletext-control#control-attributes>`_.
    * - .. option:: launch_on_finish
-     - boolean flag that includes a "Launch the installed app on finish?"
+     - boolean flag that includes a "Launch the installed application now."
        checkbox to the final step of the installer when `true`.
 
 .. versionadded:: 6.7

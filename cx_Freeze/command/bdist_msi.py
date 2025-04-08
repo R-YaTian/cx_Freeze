@@ -365,7 +365,7 @@ class bdist_msi(Command):
                 20,
                 3,
                 "LAUNCHAPP",
-                "Launch the installed app on finish?",
+                "Launch the installed application now.",
                 "Finish",
             )
             add_data(
